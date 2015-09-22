@@ -8,9 +8,10 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               "Pattern Lab"
+title:               "Pattern Lab Jekyll"
 url:                 http://kdemi.github.io/patternlab-jekyll
-baseurl:             /patternlab-jekyll/
+baseurl:             /patternlab-jekyll
+destination:         _site
 version:             0.1.0
 
 # Assets
@@ -22,4 +23,6 @@ sass:
 
 collections:
   patterns:
+    output: true
+  templates:
     output: true
