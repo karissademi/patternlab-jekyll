@@ -1,0 +1,18 @@
+<nav class="main">
+  <ul>
+  {% for collection in site.collections %}
+    {% capture label %}{{ collection | first }}{% endcapture %}
+    <li class="parent"><a href="{{ collection[0] }}">{{ collection[0] | capitalize }}</a>
+        <ul>
+          {% for pattern in site.collections.[label].docs %}
+            <li class="child">
+              <a href="#{{ pattern.id }}">
+                {{ pattern.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+  {% endfor %}
+  </ul>
+</nav>

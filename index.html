@@ -4,21 +4,22 @@ layout: default
 
 <div class="home">
   <ul class="post-list">
-    {% for pattern in site.patterns %}
-      <li>
+    {% for collection in site.collections %}
+      {% capture label %}{{ collection | first }}{% endcapture %}
+      {% for pattern in site.collections.[label].docs %}
+      <li id="{{ pattern.id }}">
         <h3>{{ pattern.title }}</h3>
         <p>{{ pattern.description }}</p>
 
         <h4>Example</h4>
         {{ pattern.output }}
 
-
         <h4>Code</h4>
         {% highlight html %}
           {{ pattern.output }}
         {% endhighlight %}
       </li>
+      {% endfor %}
     {% endfor %}
   </ul>
-
 </div>

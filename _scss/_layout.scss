@@ -155,7 +155,23 @@
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
+/**
+ * Nav
+ */
 
+ nav.main{
+   float:left;
+   width:20%;
+   padding:20px !important;
+   font-size:12px;
+ }
+ nav li.parent {
+   font-weight:bold;
+ }
+ nav .child{
+   margin-left:10px;
+   font-weight:normal;
+ }
 
 
 /**
@@ -163,6 +179,8 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    width:80%;
+    float:left;
 }
 
 .page-heading {
