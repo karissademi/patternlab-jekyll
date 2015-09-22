@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="home">
+  <ul class="post-list">
+    {% for pattern in site.patterns %}
+      <li>
+        <h3>{{ pattern.title }}</h3>
+        <p>{{ pattern.description }}</p>
+
+        <h4>Example</h4>
+        {{ pattern.output }}
+
+
+        <h4>Code</h4>
+        {% highlight html %}
+{{ pattern.output }}
+        {% endhighlight %}
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
