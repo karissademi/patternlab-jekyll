@@ -9,8 +9,9 @@ relative_permalinks: true
 
 # Setup
 title:               "Pattern Lab"
-url:                 http://cityofphiladelphia.github.io/patterns
-baseurl:             /gh-patterns/
+url:                 http://kdemi.github.io/patternlab-jekyll
+baseurl:             /patternlab-jekyll/
+version:             0.1.0
 
 # Assets
 #
