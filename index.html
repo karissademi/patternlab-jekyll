@@ -7,7 +7,7 @@ layout: default
     {% for collection in site.collections %}
       {% capture label %}{{ collection | first }}{% endcapture %}
       {% for pattern in site.collections.[label].docs %}
-      <li id="{{ pattern.id }}">
+      <li id="p-{{ pattern.title | replace:' ','-' | downcase }}">
         <h3>{{ pattern.title }}</h3>
         <p>{{ pattern.description }}</p>
 

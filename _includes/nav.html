@@ -6,7 +6,7 @@
         <ul>
           {% for pattern in site.collections.[label].docs %}
             <li class="child">
-              <a href="#{{ pattern.id }}">
+              <a href="#p-{{ pattern.title | replace:' ','-' | downcase  }}">
                 {{ pattern.title }}
               </a>
             </li>
