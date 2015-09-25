@@ -9,11 +9,10 @@ relative_permalinks: false
 
 # Setup
 title:               "Pattern Lab Jekyll"
-url:                 http://kdemi.github.io/patternlab-jekyll
+url:                 http://karissademi.github.io/patternlab-jekyll
 baseurl:             /patternlab-jekyll
 destination:         _site
 version:             0.1.0
-port:                8888
 
 # Assets
 #
@@ -23,11 +22,11 @@ sass:
   style:            :compressed
 
 collections:
-  00-atoms:
+  atoms:
     output: true
-  00-molecules:
+  molecules:
     output: true
-  00-organisms:
+  organisms:
     output: true
-  00-templates:
+  templates:
     output: true
