@@ -22,11 +22,11 @@ sass:
   style:            :compressed
 
 collections:
-  atoms:
+  00-atoms:
     output: true
-  molecules:
+  00-molecules:
     output: true
-  organisms:
+  00-organisms:
     output: true
-  templates:
+  00-templates:
     output: true

@@ -2,7 +2,7 @@
   <ul>
   {% for collection in site.collections %}
     {% capture label %}{{ collection | first }}{% endcapture %}
-    <li class="parent"><a href="{{ collection[0] }}">{{ collection[0] | capitalize }}</a>
+    <li class="parent"><a href="#{{ collection[0] | split: '00-' | last  }}">{{ collection[0] | split: '00-' | last | capitalize  }}</a>
         <ul>
           {% for pattern in site.collections.[label].docs %}
             <li class="child">
