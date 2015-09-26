@@ -3,7 +3,7 @@ title: Single Comment
 ---
 <li class="comment-container">
 	<div class="comment-meta">
-		{{> atoms-avatar }}
+		{{ site.00-atoms | where:"title" : "Avatars" }}
 		<h4 class="comment-name"><a href="#">{{ name.first }} {{ name.last }}</a></h4>
 	</div>
 	<div class="comment-text">

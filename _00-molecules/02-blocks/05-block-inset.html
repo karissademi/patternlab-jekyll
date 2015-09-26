@@ -2,9 +2,9 @@
 title: Block Headline inset
 ---
 <div class="block block-inset">
-    <a href="{{ url }}" class="inner">
+    <a href="{{ site.url }}" class="inner">
 		<div class="b-thumb">
-			{{> atoms-landscape-4x3 }}
+			{{ site.00-atoms | where:"title" : "Landscape 16x9" }}
 		</div>
 		<div class="b-text">
 			<h2 class="headline">{{ headline.short }}</h2>

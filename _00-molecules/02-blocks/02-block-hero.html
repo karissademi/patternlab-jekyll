@@ -2,9 +2,9 @@
 title: Block Hero
 ---
 <div class="block block-hero">
-	<a href="{{ url }}" class="b-inner">
+	<a href="{{ site.url }}" class="b-inner">
 		<div class="b-thumb">
-			{{> atoms-landscape-16x9 }}
+			{{ site.00-atoms | where:"title" : "Landscape 16x9" }}
 		</div>
 		<div class="b-text">
 			<h2 class="b-title">{{ headline.medium }}</h2>
