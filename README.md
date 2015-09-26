@@ -3,6 +3,7 @@ A port of [Pattern Lab](http://patternlab.io) to [Jekyll](https://jekyllrb.com/)
 
 ## How to use
 Run `jekyll serve`
+
 Your project will be available at `http://127.0.0.1:8888/patternlab-jekyll/`
 
 New patterns can be added under any of the following collections:
