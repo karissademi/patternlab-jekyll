@@ -2,10 +2,10 @@
 	{{> organisms-header }}
 	<div role="main">
 		{{# emergency }}
-			{{> molecules-alert:error }}
+			{{ site.00-molecules | where:"title" : "Alert" }}
 		{{/ emergency }}
 		{{# hero }}
-			{{> molecules-block-hero }}
+			{{ site.00-molecules | where:"title" : "Block Hero" }}
 		{{/ hero}}
 
 		<div class="g g-3up">
@@ -24,7 +24,7 @@
 					<h2 class="section-title">Latest Posts</h2>
 					<ul class="post-list">
 						{{# latest-posts }}
-							<li>{{> molecules-media-block }}</li>
+							<li>{{ site.00-molecules | where:"title" : "Media Block" }}</li>
 						{{/ latest-posts }}
 					</ul>
 					<a href="#" class="text-btn">View more posts</a>

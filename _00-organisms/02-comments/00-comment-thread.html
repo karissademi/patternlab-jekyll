@@ -4,7 +4,7 @@ title: Comment Thread
 <section class="comments section">
 	<div class="comments-container" id="comments-container">
 		<h2 class="section-title">59 Comments</h2>
-		{{> molecules-comment-form }}
+		{{ site.00-molecules | where:"title" : "Comment Form" }}
 		<ul class="comment-list">
 			{{# listItems.five }}
 				{{> molecules-single-comment }}
