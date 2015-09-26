@@ -1,8 +1,8 @@
-<nav id="nav" class="main">
+<nav id="nav" class="main top">
   <ul id="sidebar" class="nav nav-stacked">
   {% for collection in site.collections %}
     {% capture label %}{{ collection | first }}{% endcapture %}
-    <li class="parent"><a href="#{{ collection[0] }}">{{ collection[0] | capitalize }}</a>
+    <li class="parent"><a href="#{{ collection[0] }}">{{ collection[0] | split: '00-' | last | upcase  }}</a>
         <ul class="nav nav-stacked">
           {% for pattern in site.collections.[label].docs %}
             <li class="child">

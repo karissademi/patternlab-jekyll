@@ -6,7 +6,7 @@ layout: default
   <ul class="post-list">
     {% for collection in site.collections %}
       {% capture label %}{{ collection | first }}{% endcapture %}
-      <h2 id="{{ collection[0] | split: '00-' | last  }}">{{ collection[0] | split: '00-' | last | capitalize  }}</a></h2>
+      <h2 id="{{ collection[0] }}">{{ collection[0] | split: '00-' | last | capitalize  }}</a></h2>
       {% for pattern in site.collections.[label].docs %}
       <li id="p-{{ pattern.title | replace:' ','-' | downcase }}">
         <h3>{{ pattern.title }}</h3>

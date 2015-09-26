@@ -141,9 +141,10 @@ $animate-quick: 0.2s;
 
 nav{
   position: relative;
+  top:0;
 }
-.fixed {
-    position: fixed;
+.top{
+  top: 60px;
 }
 /* all links */
 .main .nav>li>a {
