@@ -7,9 +7,9 @@
  * It's also helpful for overriding context-specific styles like fixed or absolutely positioned elements
  * These styles will not be your production CSS.
  */
- 
 
-/* Style Guide Interface Colors */ 
+
+/* Style Guide Interface Colors */
 $sg-primary : #222;
 $sg-secondary : #808080;
 $sg-tertiary : #ddd;
@@ -56,16 +56,16 @@ $animate-quick: 0.2s;
 	text-align: center;
 	margin-bottom: $sg-pad-half;
 	padding: 1em !important;
-	
+
 	&:nth-of-type(2n) {
 		color: $sg-tertiary;
 		background: $sg-secondary;
 	}
-	
+
 	.gi {
 		background: $sg-tone;
 		color: $sg-tertiary;
-		
+
 		&:nth-of-type(2n) {
 			background: $sg-tone-2;
 		}
@@ -80,7 +80,7 @@ $animate-quick: 0.2s;
 	text-align: center;
 }
 
-//Animate Demo to show 
+//Animate Demo to show
 .animate-move {
 	position: relative;
 
@@ -122,7 +122,7 @@ $animate-quick: 0.2s;
 	display: block;
 	height: 1.5em;
 	width: 50%;
-	
+
 	@media all and (max-width: $sg-bp-small-2) {
 		float: left;
 		margin-right: 0.3em;
@@ -133,9 +133,62 @@ $animate-quick: 0.2s;
 		height: 4em;
 		margin-bottom: 0.2em;
 	}
-	
-}
 
+}
 .sg-label {
 	line-height: 1;
+}
+
+nav{
+  position: relative;
+}
+.fixed {
+    position: fixed;
+}
+/* all links */
+.main .nav>li>a {
+    color: #999;
+    border-left: 2px solid transparent;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* nested links */
+.main .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+/* active & hover links */
+.main .nav>.active>a,
+.main .nav>li>a:hover,
+.main .nav>li>a:focus {
+    color: #563d7c;
+    text-decoration: none;
+    background-color: transparent;
+    border-left-color: #563d7c;
+}
+/* all active links */
+.main .nav>.active>a,
+.main .nav>.active:hover>a,
+.main .nav>.active:focus>a {
+    font-weight: 700;
+}
+/* nested active links */
+.main .nav .nav>.active>a,
+.main .nav .nav>.active:hover>a,
+.main .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
+/* hide inactive nested list */
+.main .nav ul.nav {
+    display: none;
+}
+/* show active nested list */
+.main .nav>.active>ul.nav {
+    display: block;
 }
