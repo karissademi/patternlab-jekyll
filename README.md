@@ -15,7 +15,7 @@ New patterns can be added under any of the following collections:
 New patterns require front matter `title`
 
 ## Why Jekyll?
-* Why not?
+* Ability to host on GitHub Pages
 
 ## Caveats
 There are some significant changes to the way files get generated that take a step away from Pattern Lab's approach.
