@@ -167,10 +167,10 @@ nav{
 .main .nav>.active>a,
 .main .nav>li>a:hover,
 .main .nav>li>a:focus {
-    color: #563d7c;
+    color:#2a7ae2;
     text-decoration: none;
     background-color: transparent;
-    border-left-color: #563d7c;
+    border-left-color: #2a7ae2;
 }
 /* all active links */
 .main .nav>.active>a,
@@ -213,4 +213,7 @@ nav{
   content: "";
   display: table;
   clear: both;
+}
+a:link, a:visited {
+  color:#2a7ae2;
 }
