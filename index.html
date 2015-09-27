@@ -12,7 +12,7 @@ layout: default
 
       {% for pattern in site.collections.[label].docs %}
 
-      <li id="p-{{ pattern.title | replace:' ','-' | downcase }}">
+      <li id="p-{{ pattern.title | replace:' ','-' | downcase }}" class="group">
 
         <h3 class="code-title">{{ pattern.title }} <span class="view-code">View code <i class="fa fa-arrow-circle-right"></i></span></h3>
 

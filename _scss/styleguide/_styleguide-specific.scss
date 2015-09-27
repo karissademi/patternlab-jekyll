@@ -209,3 +209,8 @@ nav{
 .view-code{
   font-size:10px;
 }
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
