@@ -29,5 +29,3 @@ collections:
     output: true
   00-organisms:
     output: true
-  00-templates:
-    output: true
