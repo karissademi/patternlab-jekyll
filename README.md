@@ -10,9 +10,8 @@ New patterns can be added under any of the following collections:
 * 00-atoms
 * 00-molecules
 * 00-organisms
-* 00-templates
 
-New patterns require front matter `title`
+New patterns require front matter `title` and optional `description`.
 
 ## Why Jekyll?
 * Ability to host on GitHub Pages
