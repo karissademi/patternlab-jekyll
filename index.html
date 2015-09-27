@@ -5,20 +5,26 @@ layout: default
 <div class="home">
   <ul class="post-list">
     {% for collection in site.collections %}
+
       {% capture label %}{{ collection | first }}{% endcapture %}
-      <h2 id="{{ collection[0] }}">{{ collection[0] | split: '00-' | last | capitalize  }}</a></h2>
+
+      <h2 id="{{ collection[0] }}">{{ collection[0] | split: '00-' | last | upcase  }}</a></h2>
+
       {% for pattern in site.collections.[label].docs %}
+
       <li id="p-{{ pattern.title | replace:' ','-' | downcase }}">
-        <h3>{{ pattern.title }}</h3>
+
+        <h3 class="code-title">{{ pattern.title }} <span class="view-code">View code <i class="fa fa-arrow-circle-right"></i></span></h3>
+
+        <div class="the-code">
+          {% highlight html %}
+            {{ pattern.output }}
+          {% endhighlight %}
+        </div>
         <p>{{ pattern.description }}</p>
 
-        <h4>Example</h4>
         {{ pattern.output }}
 
-        <h4>Code</h4>
-        {% highlight html %}
-          {{ pattern.output }}
-        {% endhighlight %}
       </li>
       {% endfor %}
     {% endfor %}
