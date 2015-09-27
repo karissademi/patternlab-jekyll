@@ -1,24 +1,24 @@
 <div class="page" id="page">
-	{{> organisms-header }}
+	{{ site.00-organisms | where:"title" : "Header" }}
 	<div role="main">
 		<div class="l-two-col">
 			<div class="l-main">
 				<article class="article">
 					<header class="article-header">
 						<h1>Article Headline Lorem ipsum dolor sit aweofij</h1>
-						{{> molecules-byline }}
+						{{ site.00-molecules | where:"title" : "Byline" }}
 					</header>
-					{{> organisms-article-body }}
+					{{ site.00-organisms | where:"title" : "Article Body" }}
 				</article><!--end .article-->
-				{{> molecules-social-share }}
-				{{> organisms-comment-thread }}
+				{{ site.00-molecules | where:"title" : "Social Share" }}
+				{{ site.00-organisms | where:"title" : "Comment Thread" }}
 			</div><!--end l-main-->
 
 			<div class="l-sidebar">
-				{{> organisms-related-posts }}
-				{{> organisms-recent-tweets }}
+				{{ site.00-organisms | where:"title" : "Related Posts" }}
+				{{ site.00-organisms | where:"title" : "Recent Tweets" }}
 			</div><!--end l-sidebar-->
-		</div><!--end l-two-col-->	
+		</div><!--end l-two-col-->
 	</div><!--End role=main-->
-	{{> organisms-footer }}
+	{{ site.00-organisms | where:"title" : "Footer" }}
 </div>

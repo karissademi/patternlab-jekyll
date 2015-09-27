@@ -7,9 +7,9 @@ title: Comment Thread
 		{{ site.00-molecules | where:"title" : "Comment Form" }}
 		<ul class="comment-list">
 			{{# listItems.five }}
-				{{> molecules-single-comment }}
+				{{ site.00-molecules | where:"title" : "Single Comment" }}
 			{{/ listItems.five }}
 		</ul>
 	</div>
-	{{> molecules-pagination }}
+	{{ site.00-molecules | where:"title" : "Pagination" }}
 </section>

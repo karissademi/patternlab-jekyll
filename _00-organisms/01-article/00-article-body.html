@@ -15,9 +15,9 @@ title: Article Body
 <p>Cras at fringilla ipsum. Donec nec libero eget est blandit dignissim a eu ante. Morbi augue nulla, luctus eu sagittis vel, malesuada ut felis. Aliquam erat volutpat. Morbi malesuada augue ac massa hendrerit fermentum. Integer scelerisque lacus a dolor convallis lobortis. Curabitur mollis ante in massa ultricies dignissim.
 </p>
 
-{{> atoms-unordered }}
+{{ site.00-atoms | where:"title" : "Unordered List" }}
 
-{{> atoms-ordered }}
+{{ site.00-atoms | where:"title" : "Ordered List" }}
 
 <p>Donec posuere fringilla nunc, vitae venenatis diam scelerisque vel. Nullam vitae mauris magna. Mauris et diam quis justo volutpat tincidunt congue nec magna. Curabitur vitae orci elit. Ut mollis massa id magna vestibulum consequat. Proin rutrum lectus justo, sit amet tincidunt est. Vivamus vitae lacinia risus.
 </p>

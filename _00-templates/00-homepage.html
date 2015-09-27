@@ -1,5 +1,5 @@
 <div class="page" id="page">
-	{{> organisms-header }}
+	{{ site.00-organisms | where:"title" : "Header" }}
 	<div role="main">
 		{{# emergency }}
 			{{ site.00-molecules | where:"title" : "Alert" }}
@@ -11,7 +11,7 @@
 		<div class="g g-3up">
 			{{# touts}}
 				<div class="gi">
-					{{> molecules-block-inset }}
+					{{ site.00-molecules | where:"title" : "Block Headline inset" }}
 				</div>
 			{{/ touts}}
 		</div><!--end 3up-->
@@ -32,9 +32,9 @@
 			</div><!--end .l-main-->
 
 			<div class="l-sidebar">
-				{{> organisms-recent-tweets }}
+				{{ site.00-organisms | where:"title" : "Recent Tweets" }}
 			</div><!--end .l-sidebar-->
 		</div><!--end .l-two-col-->
 	</div><!--End role=main-->
-	{{> organisms-footer }}
+	{{ site.00-organisms | where:"title" : "Footer" }}
 </div>

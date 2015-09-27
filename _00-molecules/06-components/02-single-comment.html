@@ -4,9 +4,9 @@ title: Single Comment
 <li class="comment-container">
 	<div class="comment-meta">
 		{{ site.00-atoms | where:"title" : "Avatars" }}
-		<h4 class="comment-name"><a href="#">{{ name.first }} {{ name.last }}</a></h4>
+		<h4 class="comment-name"><a href="#">{{ site.data.content.name.first }} {{ site.data.content.name.last }}</a></h4>
 	</div>
 	<div class="comment-text">
-		<p>{{ description }}</p>
+		<p>{{ site.data.content.description }}</p>
 	</div>
 </li>
