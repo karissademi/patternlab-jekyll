@@ -13,6 +13,12 @@ New patterns can be added under any of the following collections:
 
 New patterns require front matter `title` and optional `description`.
 
+## Creating releases
+1. Update release variable in `_config.yml`
+2. Create release folder under `dist/`
+3. Copy compiled css file to location in `dist/`
+4. Create release on GitHub
+
 ## Why Jekyll?
 * Ability to host on GitHub Pages
 
